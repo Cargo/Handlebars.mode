@@ -11,7 +11,7 @@
 
 #### Automatic, via Finder
 
-Either *Clone in Desktop* or *Download ZIP* and unzip, and double-click `Handlebars.mode` or open it with Coda 2. When asked by Coda 2 if you want to install the mode, click *Install*.
+Either *Clone in Desktop* or *Download ZIP*. Note that when downloading a ZIP you will need to first unzip, then, if necessary, rename the unzipped directory from `Handlebars.mode-branchname` to `Handlebars.mode`. Next, double-click `Handlebars.mode` or open it with Coda 2. When asked by Coda 2 if you want to install the mode, click *Install*.
 
 #### Manual, via Terminal
 
