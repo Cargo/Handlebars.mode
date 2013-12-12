@@ -4,9 +4,10 @@
 		<extension>ms</extension>
 		<extension>mstache</extension>
 		<extension>mustache</extension>
-		<extension>bars</extension>
+		<extension>hbs</extension>
 		<extension>hbars</extension>
 		<extension>handlebars</extension>
+		<extension>bars</extension>
 		<extension>stache</extension>
 	</recognition>
 </settings>
