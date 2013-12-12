@@ -5,7 +5,7 @@
 * Handlebars and Mustache syntax highlighting within HTML documents, with support for inline styles and scripts
 * Navigator symbols for sections and partials tags
 * Custom bookmarks for the Code Navigator, e.g. `{{! !Bookmark }}`
-* Autocomplete for Handlebars helpers and tags used throughout the current document
+* Autocomplete for Handlebars helpers and Mustache tags used throughout the current document
 
 ## Installation
 
