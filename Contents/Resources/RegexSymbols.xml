@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE syntax SYSTEM "symbol.dtd">
+<symbols>
+	<symbol id="Sections" font-weight="normal" font-style="normal" image="Symbol#" indentation="0" ignoreblocks="no">
+		<regex>\A(?:{{[#\^](?:\s*?))[\s\S]*?(?:}})\Z</regex>
+		<postprocess>
+			<find>(({{[#\^][\s]*)|([\s]*}}.*)|['"])</find>
+			<replace></replace>
+			<find>[ \t]+</find>
+			<replace> </replace>
+		</postprocess>
+	</symbol>
+	<symbol id="Partials" font-weight="normal" font-style="normal" image="SymbolP" indentation="0" ignoreblocks="no">
+		<regex>\A(?:{{[>&lt;](?:\s*?))[\s\S]*?(?:}})\Z</regex>
+		<postprocess>
+			<find>(({{[>&lt;][\s]*)|([\s]*}}.*))</find>
+			<replace></replace>
+			<find>[ \t]+</find>
+			<replace> </replace>
+		</postprocess>
+	</symbol>
+	<symbol id="Tags" ignoreblocks="no" hidden="yes" useforautocomplete="yes">
+		<regex>\A(?:{{[^!>&lt;=%@](?:\s*?))[\s\S]*?(?:}})\Z</regex>
+		<postprocess>
+			<find>(({{({?)[\s]*)|([\s]*}}.*))</find>
+			<replace></replace>
+			<find>([\s]+.*)</find>
+			<replace></replace>
+		</postprocess>
+	</symbol>
+	<symbol id="Comment Marks" font-weight="bold" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="yes" show-in-comments="yes">
+		<regex>{{!- mark[\t ]*(?:-(?=[\n\r]))?([^\n\r]*)}}</regex>
+	</symbol>
+	<symbol id="Pragma marks" font-weight="normal" font-style="normal" image="SymbolMark" indentation="0" ignoreblocks="no" show-in-comments="yes">
+		<regex>{{!\s*!(.+)\s?}}</regex>
+	</symbol>
+</symbols>

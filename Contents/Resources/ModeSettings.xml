@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<recognition>
+		<extension>ms</extension>
+		<extension>mstache</extension>
+		<extension>mustache</extension>
+		<extension>bars</extension>
+		<extension>hbars</extension>
+		<extension>handlebars</extension>
+		<extension>stache</extension>
+	</recognition>
+</settings>
